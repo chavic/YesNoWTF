@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:template/main.dart';
+import 'package:YesNoWTF/main.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {

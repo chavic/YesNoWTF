@@ -1,4 +1,4 @@
-package com.example.template
+package com.example.YesNoWTF
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
