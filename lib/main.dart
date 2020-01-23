@@ -11,24 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      debugShowCheckedModeBanner: false,
+      title: 'YesNoWTF',
       initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
     );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        body: Center(
-          child: Container(
-            child: Text('Hello World'),
-          ),
-        ),
-      );
   }
 }

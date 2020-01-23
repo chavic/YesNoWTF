@@ -1,5 +1,5 @@
+import 'package:YesNoWTF/presentation/pages/homepage.dart';
 import 'package:flutter/material.dart';
-import 'package:YesNoWTF/main.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -17,7 +17,7 @@ class RouteGenerator {
           // Do Someting with the arguments
 
         } else {
-         return _errorRoute();
+          return _errorRoute();
         }
         break;
       default:
@@ -29,7 +29,7 @@ class RouteGenerator {
 
   static Route<dynamic> _errorRoute() {
     return MaterialPageRoute(
-      builder: (_) =>  Scaffold(
+      builder: (_) => Scaffold(
         appBar: AppBar(
           title: Text('Material App Bar'),
         ),
