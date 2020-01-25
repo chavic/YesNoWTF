@@ -15,38 +15,33 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: BlocProvider(
         builder: (_) => sl<AskBloc>(),
-        child: Stack(
-          children: <Widget>[
-            Container(
-                //child: Image.asset("assets/x.png"),
-                ),
-            ListView(
-              children: <Widget>[buildLayout(context)],
-            ),
-          ],
+        child: SingleChildScrollView(
+          child: buildLayout(context),
         ),
       ),
     );
   }
 
-  Container buildLayout(BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height,
-      child: Column(
-        children: <Widget>[
-          Expanded(
-            flex: 9,
-            child: AppLogo(),
-          ),
-          Expanded(
-            flex: 9,
-            child: AppMassageBox(),
-          ),
-          Expanded(
-            flex: 10,
-            child: CustomTextFiled(),
-          )
-        ],
+  SafeArea buildLayout(BuildContext context) {
+    return SafeArea(
+      child: Container(
+        height: MediaQuery.of(context).size.height - 50,
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              flex: 9,
+              child: AppLogo(),
+            ),
+            Expanded(
+              flex: 9,
+              child: AppMassageBox(),
+            ),
+            Expanded(
+              flex: 10,
+              child: CustomTextFiled(),
+            )
+          ],
+        ),
       ),
     );
   }

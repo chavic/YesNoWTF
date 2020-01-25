@@ -11,9 +11,17 @@ class InitialAskState extends AskState {
   InitialAskState({@required this.massage});
 }
 
-class WaitingState extends AskState {}
+class WaitingState extends AskState {
+  final String massage;
 
-class Thinking extends AskState {}
+  WaitingState({@required this.massage});
+}
+
+class Thinking extends AskState {
+  final String massage;
+
+  Thinking({@required this.massage});
+}
 
 class ReplyState extends AskState {
   final String answer;
