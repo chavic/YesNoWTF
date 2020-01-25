@@ -17,9 +17,11 @@ class AppMassageBox extends StatelessWidget {
           massage = state.massage;
         }
         if (state is WaitingState) {
+          // todo create animation if the app is waiting
           massage = state.massage;
         }
         if (state is Thinking) {
+          // todo create animation if the app is thinking
           massage = state.massage;
         }
         if (state is ReplyState) {
@@ -33,6 +35,7 @@ class AppMassageBox extends StatelessWidget {
     );
   }
 
+  // todo create massage change animation
   Padding buildText(String text) {
     return Padding(
       child: Center(
