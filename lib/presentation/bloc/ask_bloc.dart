@@ -1,11 +1,10 @@
 import 'dart:async';
 
-import 'package:YesNoWTF/core/error/failures.dart';
-import 'package:YesNoWTF/core/usecases/usecase.dart';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 
 import './bloc.dart';
+import '../../core/error/failures.dart';
 import '../../domain/usecases/ask_usecase.dart';
 
 class AskBloc extends Bloc<AskEvent, AskState> {

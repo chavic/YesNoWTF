@@ -10,7 +10,7 @@ import 'domain/usecases/ask_usecase.dart';
 
 final sl = GetIt.instance; // This is the service locator
 
-Future<void> init() {
+Future<void> init() async {
   // Presentation
   sl.registerFactory(() => AskBloc(useCase: sl()));
   // Domain
