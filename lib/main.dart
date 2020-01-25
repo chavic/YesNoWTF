@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-//import 'injection_container.dart' as di;
+import 'injection_container.dart' as di;
 import 'presentation/route_generater.dart';
 
 void main() async {
-  //await di.init();
+  await di.init();
   runApp(MyApp());
 }
 
