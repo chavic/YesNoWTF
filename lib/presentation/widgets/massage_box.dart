@@ -35,16 +35,18 @@ class AppMassageBox extends StatelessWidget {
 
   Padding buildText(String text) {
     return Padding(
-      child: Text(
-        text,
-        textAlign: TextAlign.left,
-        style: GoogleFonts.amiko(
-            fontSize: 47,
-            color: Color.fromRGBO(20, 13, 45, 1),
-            height: 0.8,
-            letterSpacing: 0.3),
+      child: Center(
+        child: Text(
+          text,
+          textAlign: TextAlign.left,
+          style: GoogleFonts.amiko(
+              fontSize: 47,
+              color: Color.fromRGBO(20, 13, 45, 1),
+              height: 1.0,
+              letterSpacing: 0.3),
+        ),
       ),
-      padding: EdgeInsets.fromLTRB(36, 30, 80, 50),
+      padding: EdgeInsets.fromLTRB(36, 30, 36, 50),
     );
   }
 }

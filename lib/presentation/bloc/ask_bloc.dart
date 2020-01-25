@@ -21,10 +21,10 @@ class AskBloc extends Bloc<AskEvent, AskState> {
     AskEvent event,
   ) async* {
     if (event is Waiting) {
-      yield WaitingState(massage: "I'll just wait till your done");
+      yield WaitingState(massage: "Quetions usually end with a '?'");
     }
     if (event is Ask) {
-      yield Thinking(massage: "Hmm... let me think about that");
+      yield Thinking(massage: "Let me think about that");
       final askEither = await useCase(event.massage);
 
       yield* askEither.fold((failure) async* {
