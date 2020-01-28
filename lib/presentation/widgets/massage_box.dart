@@ -3,39 +3,70 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AppMassageBox extends StatelessWidget {
+class AppMassageBox extends StatefulWidget {
   const AppMassageBox({
     Key key,
   }) : super(key: key);
+
+  @override
+  _AppMassageBoxState createState() => _AppMassageBoxState();
+}
+
+class _AppMassageBoxState extends State<AppMassageBox>
+    with SingleTickerProviderStateMixin {
+  AnimationController _controller;
+
+  @override
+  void initState() {
+    _controller = AnimationController(
+      value: 0,
+      duration: Duration(seconds: 3),
+      vsync: this,
+    );
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<AskBloc, AskState>(
       builder: (context, state) {
         String massage;
+
         if (state is InitialAskState) {
+          _controller.forward();
           massage = state.massage;
         }
         if (state is WaitingState) {
-          // todo create animation if the app is waiting
+          _controller.forward();
           massage = state.massage;
         }
         if (state is Thinking) {
-          // todo create animation if the app is thinking
+          _controller.repeat();
           massage = state.massage;
         }
         if (state is ReplyState) {
+          _controller.forward();
           massage = state.answer;
         }
         if (state is ErrorState) {
+          _controller.forward();
           massage = state.massage;
         }
-        return buildText(massage);
+
+        return FadeTransition(
+          opacity: _controller,
+          child: buildText(massage),
+        );
       },
     );
   }
 
-  // todo create massage change animation
   Padding buildText(String text) {
     return Padding(
       child: Center(

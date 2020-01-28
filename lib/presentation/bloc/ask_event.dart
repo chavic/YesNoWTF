@@ -16,3 +16,5 @@ class Waiting extends AskEvent {
 
   Waiting({@required this.currentText});
 }
+
+class Empty extends AskEvent {}

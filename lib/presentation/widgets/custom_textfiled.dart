@@ -10,10 +10,12 @@ class CustomTextFiled extends StatelessWidget {
 
   void dispatchAskEvent(String userText, BuildContext context) {
     BlocProvider.of<AskBloc>(context).dispatch(Ask(massage: userText));
+    BlocProvider.of<AskBloc>(context).dispatch(Empty());
   }
 
   void dispatchWaitingEvent(String userText, BuildContext context) {
     BlocProvider.of<AskBloc>(context).dispatch(Waiting(currentText: userText));
+    BlocProvider.of<AskBloc>(context).dispatch(Empty());
   }
 
   @override
@@ -22,9 +24,9 @@ class CustomTextFiled extends StatelessWidget {
       child: TextField(
         onChanged: (value) {
           if (value.indexOf("?") > 0) {
-            dispatchAskEvent(value,context);
+            dispatchAskEvent(value, context);
           } else {
-            dispatchWaitingEvent(value,context);
+            dispatchWaitingEvent(value, context);
           }
         },
         autofocus: false,

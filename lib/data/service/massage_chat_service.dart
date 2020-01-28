@@ -1,7 +1,9 @@
-import 'package:YesNoWTF/data/model/massage_model.dart';
 import 'dart:convert';
+
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
+
+import '../model/massage_model.dart';
 
 abstract class MassageChatService {
   Future<MassageModel> getResponse(MassageModel massageModel);
