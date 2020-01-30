@@ -1,5 +1,17 @@
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/YesNoWTF/'
+        }
+      }
+    : {}
+
 export default {
   mode: 'universal',
+  router: {
+    base: '/YesNoWTF/'
+  },
   /*
    ** Headers of the page
    */
@@ -16,6 +28,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+  ...routerBase,
   /*
    ** Customize the progress-bar color
    */
