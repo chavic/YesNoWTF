@@ -1,5 +1,22 @@
-# YesNoWTF
+# yesnowtf
 
-This app allows you to make the right decisions 100% at the time, it has the power to predict the outcome of any event in the universe and literally will tell you the right answer, that is... you ask the right question of cource. Beware it is REAL%100👌😂
+> an app that says yes, no or wtf
 
-P.S This app is not an absolute joke!!!
+## Build Setup
+
+``` bash
+# install dependencies
+$ npm run install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
