@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
