@@ -1,6 +1,6 @@
-# yesnowtf
+# ynwtf
 
-> an app that says yes, no or wtf
+> My tiptop Nuxt.js project
 
 ## Build Setup
 

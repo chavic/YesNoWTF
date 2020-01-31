@@ -1,52 +1,31 @@
 {
-  "name": "yesnowtf",
+  "name": "ynwtf",
   "version": "1.0.0",
-  "description": "an app that says yes, no or wtf",
+  "description": "My tiptop Nuxt.js project",
   "author": "chavic",
   "private": true,
-  "homepage": "https://chavic.github.io/YesNoWTF",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "gh-pages -d dist",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest"
   },
-  "lint-staged": {
-    "*.{js,vue}": "eslint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "nuxt": "^2.0.0",
-    "@nuxtjs/pwa": "^3.0.0-0",
-    "@nuxtjs/dotenv": "^1.4.0"
+    "bootstrap-vue": "^2.0.0",
+    "bootstrap": "^4.1.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
-    "@nuxtjs/stylelint-module": "^3.1.0",
-    "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.1.0",
-    "cross-env": "^7.0.0",
     "eslint": "^6.1.0",
-    "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "gh-pages": "^2.2.0",
-    "husky": "^2.6.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
     "jest": "^24.1.0",
-    "lint-staged": "^8.2.1",
-    "prettier": "^1.16.4",
-    "stylelint": "^10.1.0",
     "vue-jest": "^4.0.0-0"
   }
 }
