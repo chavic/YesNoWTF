@@ -1,72 +1,65 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        ynwtf
-      </h1>
-      <h2 class="subtitle">
-        My tiptop Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <div class="container">
+      <div id="logo-container">
+        <img src="Logo.png" alt="yes no logo">
+      </div>
+
+      <div>
+        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="download-btn">Download APK</a>
+      </div>
+
+      <div class="screenshot-container">
+        <h6>Screenshots</h6>
+        <img src="X - 1.png" alt="">
+        <img src="X - 1.png" alt="">
+        <img src="X - 1.png" alt="">
+        <img src="X - 1.png" alt="">
       </div>
     </div>
   </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
-
 <style>
+
 .container {
-  margin: 0 auto;
+  margin: 10% auto;
   min-height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-rows: 30% 20%;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.logo-container {
+  margin: 500px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.download-btn {
+  background: #c4c4c4;
+  border: 2px solid #140d2d;
+  box-sizing: border-box;
+  border-radius: 14px;
+  padding: 10px 30px;
+
+  font-family: "Amiko" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #140d2d;
 }
 
-.links {
-  padding-top: 15px;
+@media only screen and (max-device-width: 640px) {
+  .container {
+    margin: 100px auto;
+    display: grid;
+    grid-template-rows: 300px 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 </style>
