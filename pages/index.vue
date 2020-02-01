@@ -9,11 +9,15 @@
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="download-btn">Download APK</a>
       </div>
     </div>
+
+    <div class="about-container">
+      <h2>About</h2>
+      <p>An app allows you to make the right decisions 100%😉 at the time, it knows everything and it will give give you the right answer *P.S yes/no wtf. Seriously this is not a PRANK😂, this right here... is the shit</p>
+    </div>
   </div>
 </template>
 
 <style>
-
 .container {
   margin: 10% auto;
   min-height: 100vh;

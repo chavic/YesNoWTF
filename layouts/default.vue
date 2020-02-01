@@ -20,7 +20,7 @@ import About from '~/components/About.vue'
 
 // eslint-disable-next-line prefer-const
 let data = {
-  isAbout: true
+  isAbout: false
 }
 
 export default {
@@ -57,6 +57,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   height: 100%;
+  overflow: hidden;
 }
 
 *,
