@@ -8,14 +8,6 @@
       <div>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="download-btn">Download APK</a>
       </div>
-
-      <div class="screenshot-container">
-        <h6>Screenshots</h6>
-        <img src="X - 1.png" alt="">
-        <img src="X - 1.png" alt="">
-        <img src="X - 1.png" alt="">
-        <img src="X - 1.png" alt="">
-      </div>
     </div>
   </div>
 </template>

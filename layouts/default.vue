@@ -3,9 +3,7 @@
     <nav>
       <ul>
         <li>
-          <button v-on:click="toggleAbout">
-            About
-          </button>
+          <a v-on:click="toggleAbout" target="_blank">About</a>
         </li>
       </ul>
     </nav>
