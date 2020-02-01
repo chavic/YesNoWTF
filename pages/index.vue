@@ -6,7 +6,7 @@
       </div>
 
       <div>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="download-btn">Download APK</a>
+        <a href="./downloads/ynwtf.zip" target="_blank" class="download-btn">Download APK</a>
       </div>
     </div>
 
