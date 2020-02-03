@@ -6,7 +6,7 @@
       </div>
 
       <div>
-        <a href="./downloads/ynwtf.zip" target="_blank" class="download-btn">Download APK</a>
+        <a href="https://api.codemagic.io/artifacts/1829370c-d6f1-4528-a750-e85a09b58fc1/eaa7dd6b-b98c-4cb7-8cbf-ec6437104fe3/app.apk" target="_blank" class="download-btn">Download APK</a>
       </div>
     </div>
 
